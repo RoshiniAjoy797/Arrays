@@ -1,0 +1,59 @@
+# Try-Catch Block : To catch and handle exceptions that occur during the execution of code.
+  -----------------
+	try {
+	    // Code that may throw an exception
+	} catch (ExceptionType1 e1) {
+	    // Handler for ExceptionType1
+	} catch (ExceptionType2 e2) {
+	    // Handler for ExceptionType2
+	} finally {
+	    // Optional block that executes regardless of whether an exception occurred
+	}
+
+# Throwing Exceptions : To explicitly throw an exception from a method or block of code.
+  ---------------------
+	 throw new ExceptionType("Exception message");
+ 
+# Throws Clause : To declare that a method can throw one or more exceptions, making it the
+  --------------- 
+responsibility of the calling method to handle or declare those exceptions.
+
+	public void methodName() throws ExceptionType1, ExceptionType2 {
+	    // Code that may throw exceptions
+	}
+	
+# Custom Exceptions : To define your own exception types by extending the Exception
+  -------------------
+or RuntimeException class.
+
+	public class CustomException extends Exception {
+	    public CustomException(String message) {
+	        super(message);
+	    }
+	}
+
+# Try-With-Resources : To automatically close resources (like files, sockets) when they are no longer needed, 
+  --------------------
+ensuring that resources are freed up properly.
+
+	try (ResourceType resource = new ResourceType()) {
+	    // Code using the resource
+	} catch (Exception e) {
+	    // Handle exception
+	}
+	
+# Exception Chaining : To pass an exception as a cause to another exception, preserving 
+  --------------------
+the original exception information.
+
+	throw new NewException("New message", originalException);
+
+# Multi-Catch Block : To handle multiple exceptions with a single catch block.
+ -------------------
+ 
+	 try {
+	    // Code that may throw exceptions
+	} catch (IOException | SQLException e) {
+	    // Handle both IOException and SQLException
+	}
+ 
