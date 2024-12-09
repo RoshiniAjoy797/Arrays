@@ -54,3 +54,13 @@ public class SpiralMatrix_II {
 		return gm;
 	}
 }
+/*
+
+Enter positive integer : 
+3
+Generated spiral matrix : 
+1 2 3 
+8 9 4 
+7 6 5 
+
+ */
